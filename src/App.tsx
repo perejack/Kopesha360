@@ -8,6 +8,7 @@ import LoanApprovalToast from './components/LoanApprovalToast';
 import PrivateRoute from './components/PrivateRoute';
 import AuthModal from './components/AuthModal';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
+import homeImg from './assets/home.png';
 
 function HomePage() {
   const navigate = useNavigate();
@@ -23,17 +24,17 @@ function HomePage() {
 
   const features = [
     {
-      icon: <Shield className="w-6 h-6 text-[#FF8800]" />,
+      icon: <Shield className="w-6 h-6 text-[#1a8d46]" />,
       title: "Secure Process",
       description: "Bank-level security protocols to protect your data"
     },
     {
-      icon: <Clock className="w-6 h-6 text-[#FF8800]" />,
+      icon: <Clock className="w-6 h-6 text-[#1a8d46]" />,
       title: "Quick Approval",
       description: "Get approved in minutes, not days"
     },
     {
-      icon: <CreditCard className="w-6 h-6 text-[#FF8800]" />,
+      icon: <CreditCard className="w-6 h-6 text-[#1a8d46]" />,
       title: "Flexible Terms",
       description: "Customizable loan terms that fit your needs"
     }
@@ -65,7 +66,7 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#FF8800]-50 via-white to-[#FF8800]-50/30 pt-32 pb-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#1a8d46]-50 via-white to-[#1a8d46]-50/30 pt-32 pb-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             {/* Text Content */}
@@ -75,9 +76,9 @@ function HomePage() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex-1 max-w-xl"
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#FF8800] leading-tight mb-6">
-                AfriQuick Loans BoraCredit
-                <span className="text-[#FF8800] block">Financial Solutions</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1a8d46] leading-tight mb-6">
+                Kopesha360
+                <span className="text-[#1a8d46] block">Financial Solutions</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8">
                 Get instant loans up to KES 100,000 directly to your M-PESA. No paperwork, no guarantor needed.
@@ -85,14 +86,14 @@ function HomePage() {
               <div className="flex flex-wrap gap-4">
                 <button
                   onClick={handleButtonClick}
-                  className="bg-[#FF8800] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#FF8800]/90 transition-colors flex items-center gap-2"
+                  className="bg-[#1a8d46] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#1a8d46]/90 transition-colors flex items-center gap-2"
                 >
                   Apply Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
                 <button
                   onClick={handleButtonClick}
-                  className="border-2 border-[#FF8800] text-[#FF8800] px-8 py-3 rounded-lg font-medium hover:bg-[#FF8800] hover:text-white transition-colors"
+                  className="border-2 border-[#1a8d46] text-[#1a8d46] px-8 py-3 rounded-lg font-medium hover:bg-[#1a8d46] hover:text-white transition-colors"
                 >
                   Learn More
                 </button>
@@ -121,13 +122,13 @@ function HomePage() {
                   className="relative z-10"
                 >
                   <img
-                    src="https://ideogram.ai/assets/image/lossless/response/h95qdGfEQzm6fJTdb_0mpw"
-                    alt="AfriQuick Loans BoraCredit"
+                    src={homeImg}
+                    alt="Kopesha360"
                     className="w-full max-w-2xl mx-auto rounded-3xl shadow-2xl"
                   />
                   
                   {/* Decorative Gradient Overlay */}
-                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-[#FF8800]/10 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-[#1a8d46]/10 to-transparent pointer-events-none" />
                   
                   {/* Decorative Circles */}
                   <motion.div
@@ -137,7 +138,7 @@ function HomePage() {
                       ease: "easeInOut",
                       repeat: Infinity
                     }}
-                    className="absolute -z-10 -top-10 -right-10 w-40 h-40 rounded-full bg-gradient-to-br from-[#FF8800]/20 to-transparent blur-xl"
+                    className="absolute -z-10 -top-10 -right-10 w-40 h-40 rounded-full bg-gradient-to-br from-[#1a8d46]/20 to-transparent blur-xl"
                   />
                   <motion.div
                     animate={{ scale: [1.2, 1, 1.2] }}
@@ -146,7 +147,7 @@ function HomePage() {
                       ease: "easeInOut",
                       repeat: Infinity
                     }}
-                    className="absolute -z-10 -bottom-10 -left-10 w-40 h-40 rounded-full bg-gradient-to-tr from-[#FF8800]/20 to-transparent blur-xl"
+                    className="absolute -z-10 -bottom-10 -left-10 w-40 h-40 rounded-full bg-gradient-to-tr from-[#1a8d46]/20 to-transparent blur-xl"
                   />
                 </motion.div>
               </div>
@@ -163,14 +164,14 @@ function HomePage() {
                 ease: "easeInOut",
                 repeat: Infinity
               }}
-              className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#FF8800]/10 via-[#FF8800]/5 to-transparent -z-10"
+              className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#1a8d46]/10 via-[#1a8d46]/5 to-transparent -z-10"
             />
           </div>
         </div>
       </section>
 
       {/* Quick Features Section */}
-      <section className="py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-white to-[#FF8800]/5">
+      <section className="py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-white to-[#1a8d46]/5">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -195,9 +196,9 @@ function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="card hover:bg-[#FF8800] hover:text-white group transition-all duration-300 cursor-pointer"
+                className="card hover:bg-[#1a8d46] hover:text-white group transition-all duration-300 cursor-pointer"
               >
-                <div className="text-[#FF8800] group-hover:text-white transition-colors duration-300">
+                <div className="text-[#1a8d46] group-hover:text-white transition-colors duration-300">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold mt-4 mb-2">{feature.title}</h3>
@@ -240,7 +241,7 @@ function HomePage() {
                 className="card text-center hover:shadow-2xl transition-all duration-300"
               >
                 <motion.div 
-                  className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#FF8800]/10 mb-6"
+                  className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#1a8d46]/10 mb-6"
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.8 }}
                 >
